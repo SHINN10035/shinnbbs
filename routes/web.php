@@ -20,7 +20,7 @@ Auth::routes();
 //Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 //Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
-Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
+Route::resource('users', 'UsersController');
 
 //Route::get('/users/{user}', 'UsersController@show')->name('users.show');
 //Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
